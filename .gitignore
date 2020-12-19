@@ -1,0 +1,6 @@
+/bitrix/*
+/test/*
+/upload/*
+/local/templates/marlin/assets/images/*
+/nbproject/private/
+/.idea/*
