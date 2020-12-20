@@ -199,34 +199,31 @@
 <div id="footer">
     <div class="footer-instagram-section">
         <h3 class="footer-instagram-title text-center text-uppercase">Instagram</h3>
-
         <div id="footer-instagram" class="owl-carousel">
-
             <div class="item">
-                <a href="#"><img src="assets/images/ins-1.jpg" alt=""></a>
+                <a href="#"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/ins-1.jpg" alt=""></a>
             </div>
             <div class="item">
-                <a href="#"><img src="assets/images/ins-2.jpg" alt=""></a>
+                <a href="#"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/ins-2.jpg" alt=""></a>
             </div>
             <div class="item">
-                <a href="#"><img src="assets/images/ins-3.jpg" alt=""></a>
+                <a href="#"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/ins-3.jpg" alt=""></a>
             </div>
             <div class="item">
-                <a href="#"><img src="assets/images/ins-4.jpg" alt=""></a>
+                <a href="#"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/ins-4.jpg" alt=""></a>
             </div>
             <div class="item">
-                <a href="#"><img src="assets/images/ins-5.jpg" alt=""></a>
+                <a href="#"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/ins-5.jpg" alt=""></a>
             </div>
             <div class="item">
-                <a href="#"><img src="assets/images/ins-6.jpg" alt=""></a>
+                <a href="#"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/ins-6.jpg" alt=""></a>
             </div>
             <div class="item">
-                <a href="#"><img src="assets/images/ins-7.jpg" alt=""></a>
+                <a href="#"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/ins-7.jpg" alt=""></a>
             </div>
             <div class="item">
-                <a href="#"><img src="assets/images/ins-8.jpg" alt=""></a>
+                <a href="#"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/ins-8.jpg" alt=""></a>
             </div>
-
         </div>
     </div>
 </div>
@@ -236,7 +233,7 @@
         <div class="row">
             <div class="col-md-4">
                 <aside class="footer-widget">
-                    <div class="about-img"><img src="assets/images/footer-logo.png" alt=""></div>
+                    <div class="about-img"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/footer-logo.png" alt=""></div>
                     <div class="about-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
                         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed voluptua. At vero eos et
                         accusam et justo duo dlores et ea rebum magna text ar koto din.
@@ -274,7 +271,7 @@
                                             magna aliquyam eratma</p>
                                     </div>
                                     <div class="author-id">
-                                        <img src="assets/images/author.png" alt="">
+                                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/author.png" alt="">
 
                                         <div class="author-text">
                                             <h4>Sophia</h4>
@@ -293,7 +290,7 @@
                                             magna aliquyam eratma</p>
                                     </div>
                                     <div class="author-id">
-                                        <img src="assets/images/author.png" alt="">
+                                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/author.png" alt="">
 
                                         <div class="author-text">
                                             <h4>Sophia</h4>
@@ -312,7 +309,7 @@
                                             magna aliquyam eratma</p>
                                     </div>
                                     <div class="author-id">
-                                        <img src="assets/images/author.png" alt="">
+                                        <img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/author.png" alt="">
 
                                         <div class="author-text">
                                             <h4>Sophia</h4>
@@ -334,7 +331,7 @@
 
                     <div class="custom-post">
                         <div>
-                            <a href="#"><img src="assets/images/footer-img.png" alt=""></a>
+                            <a href="#"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/footer-img.png" alt=""></a>
                         </div>
                         <div>
                             <a href="#" class="text-uppercase">Home is peaceful Place</a>

@@ -10,6 +10,7 @@
         use Bitrix\Main\Page\Asset;
         
         Asset::getInstance()->addString('<meta name="viewport" content="width=device-width, initial-scale=1.0">');
+        
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/bootstrap.min.css');
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/font-awesome.min.css');
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/animate.min.css');
@@ -19,12 +20,12 @@
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/style.css');
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/responsive.css');
 
-        Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/jquery-1.11.3.min.js' , true);
-        Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/bootstrap.min.js' , true);
-        Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/owl.carousel.min.js' , true);
-        Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/jquery.stickit.min.js' , true);
-        Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/menu.js' , true);
-        Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/scripts.js' , true);
+        Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/jquery-1.11.3.min.js');
+        Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/bootstrap.min.js');
+        Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/owl.carousel.min.js');
+        Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/jquery.stickit.min.js');
+        Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/menu.js');
+        Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/scripts.js');
         
         $APPLICATION->ShowHead();
     ?>
