@@ -1,0 +1,1 @@
+&copy; 2020 <a href="/">Blog, </a> Designed with <i class="fa fa-heart"></i> by <a href="//marlindev.ru" target="_blank">Marlin</a>

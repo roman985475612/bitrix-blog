@@ -49,7 +49,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img src="assets/images/logo.png" alt=""></a>
+                <a class="navbar-brand" href="/"><img src="/upload/medialibrary/8c0/8c0fced5c1369fa96325a4594a019ddd.png" alt="Логотип"></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

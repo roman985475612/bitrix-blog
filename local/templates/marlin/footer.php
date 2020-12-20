@@ -233,19 +233,21 @@
         <div class="row">
             <div class="col-md-4">
                 <aside class="footer-widget">
-                    <div class="about-img"><img src="<?= SITE_TEMPLATE_PATH ?>/assets/images/footer-logo.png" alt=""></div>
-                    <div class="about-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-                        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed voluptua. At vero eos et
-                        accusam et justo duo dlores et ea rebum magna text ar koto din.
+                    <div class="about-img">
+                        <img src="/upload/medialibrary/378/3786dec1715163ced34417f74b14268f.png" alt="Логотип">
+                    </div>
+                    <div class="about-content">
+                        <?php $APPLICATION->IncludeComponent('bitrix:main.include', '', [
+                            'AREA_FILE_SHOW' => 'file',
+                            'PATH'           =>  SITE_TEMPLATE_PATH . '/inc/about-content.php'
+                        ]) ?>
                     </div>
                     <div class="address">
                         <h4 class="text-uppercase">contact Info</h4>
-
-                        <p> 142/5 BC Street, ES, VSA</p>
-
-                        <p> Phone: +123 456 78900</p>
-
-                        <p>rahim@marlindev.ru</p>
+                        <?php $APPLICATION->IncludeComponent('bitrix:main.include', '', [
+                            'AREA_FILE_SHOW' => 'file',
+                            'PATH'           =>  SITE_TEMPLATE_PATH . '/inc/contact-info.php'
+                        ]) ?>
                     </div>
                 </aside>
             </div>
@@ -346,8 +348,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center">&copy; 2017 <a href="#">Blog, </a> Designed with <i
-                            class="fa fa-heart"></i> by <a href="#">Marlin</a>
+                    <div class="text-center">
+                        <?php $APPLICATION->IncludeComponent('bitrix:main.include', '', [
+                            'AREA_FILE_SHOW' => 'file',
+                            'PATH'           =>  SITE_TEMPLATE_PATH . '/inc/copyright.php'
+                        ]) ?>
                     </div>
                 </div>
             </div>
