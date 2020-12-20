@@ -4,7 +4,7 @@
     <div id="footer-instagram" class="owl-carousel">
     	<?php foreach($arResult['ITEMS'] as $item): ?>
 	        <div class="item">
-	            <a href="<?= $item['DETAIL_URL'] ?>">
+	            <a href="<?= $item['DETAIL_PAGE_URL'] ?>">
 	                <img 
 	                	src="<?= $item['PREVIEW_PICTURE']['SRC'] ?>" 
 	                	alt="<?= $item['PREVIEW_PICTURE']['ALT'] ?>"
@@ -16,7 +16,7 @@
         <!-- Повторный вывод элементов на время разработки, ввиду отсутствия в базе нужного количества записей -->
     	<?php foreach($arResult['ITEMS'] as $item): ?> 
 	        <div class="item">
-	            <a href="<?= $item['DETAIL_URL'] ?>">
+	            <a href="<?= $item['DETAIL_PAGE_URL'] ?>">
 	                <img 
 	                	src="<?= $item['PREVIEW_PICTURE']['SRC'] ?>" 
 	                	alt="<?= $item['PREVIEW_PICTURE']['ALT'] ?>"

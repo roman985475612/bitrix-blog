@@ -198,11 +198,17 @@
 <!--footer start-->
 <div id="footer">
     <?php $APPLICATION->IncludeComponent('bitrix:news.list', 'footer_instagram', [
-        'IBLOCK_TYPE'   => 'content',
-        'IBLOCK_ID'     => '2',
-        'NEWS_COUNT'    => 20,
-        'CACHE_TYPE'    => 'A',
-        'CACHE_TIME'    => '3600'    
+        'IBLOCK_TYPE'       => 'Content',
+        'IBLOCK_ID'         => '2',
+        'SEF_MODE'          => 'Y',
+        'SEF_FOLDER'        => '/',
+        'SEF_URL_TEMPLATES' => [
+            'section' => '#SECTION_CODE_PATH#/',
+            'detail'  => '#SECTION_CODE_PATH#/#ELEMENT_CODE#',
+        ],
+        'NEWS_COUNT'        => 20,
+        'CACHE_TYPE'        => 'A',
+        'CACHE_TIME'        => '3600'    
     ]) ?>
 </div>
 
