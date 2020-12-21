@@ -2,5 +2,6 @@
 /test/*
 /upload/*
 /local/templates/marlin/assets/images/*
-/nbproject/private/
+/nbproject/*
 /.idea/*
+test.php

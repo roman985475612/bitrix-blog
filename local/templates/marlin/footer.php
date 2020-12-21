@@ -2,7 +2,6 @@
             </div>
             <div class="col-md-4" data-sticky_column>
                 <div class="primary-sidebar">
-                    
                     <aside class="widget news-letter">
                         <h3 class="widget-title text-uppercase text-center">Get Newsletter</h3>
 
@@ -13,49 +12,23 @@
                         </form>
 
                     </aside>
-                    <aside class="widget">
-                        <h3 class="widget-title text-uppercase text-center">Popular Posts</h3>
-
-                        <div class="popular-post">
-
-
-                            <a href="#" class="popular-img"><img src="assets/images/p1.jpg" alt="">
-
-                                <div class="p-overlay"></div>
-                            </a>
-
-                            <div class="p-content">
-                                <a href="#" class="text-uppercase">Home is peaceful Place</a>
-                                <span class="p-date">February 15, 2016</span>
-
-                            </div>
-                        </div>
-                        <div class="popular-post">
-
-                            <a href="#" class="popular-img"><img src="assets/images/p1.jpg" alt="">
-
-                                <div class="p-overlay"></div>
-                            </a>
-
-                            <div class="p-content">
-                                <a href="#" class="text-uppercase">Home is peaceful Place</a>
-                                <span class="p-date">February 15, 2016</span>
-                            </div>
-                        </div>
-                        <div class="popular-post">
-
-
-                            <a href="#" class="popular-img"><img src="assets/images/p1.jpg" alt="">
-
-                                <div class="p-overlay"></div>
-                            </a>
-
-                            <div class="p-content">
-                                <a href="#" class="text-uppercase">Home is peaceful Place</a>
-                                <span class="p-date">February 15, 2016</span>
-                            </div>
-                        </div>
-                    </aside>
+                    <?php $APPLICATION->IncludeComponent('bitrix:news.list', 'popular_posts', [
+                        'IBLOCK_TYPE'            => 'Content',
+                        'IBLOCK_ID'              => '2',
+                        'SEF_MODE'               => 'Y',
+                        'SEF_FOLDER'             => '/',
+                        'SEF_URL_TEMPLATES'      => [
+                            'section' => '#SECTION_CODE_PATH#/',
+                            'detail'  => '#SECTION_CODE_PATH#/#ELEMENT_CODE#',
+                        ],
+                        'NEWS_COUNT'              => 3,
+                        'SORT_BY1'                => 'SHOW_COUNTER',
+                        'SORT_ORDER1'             => 'DESC',
+                        'LIST_ACTIVE_DATE_FORMAT' => 'j F Y',
+                        'CACHE_TYPE'              => 'A',
+                        'CACHE_TIME'              => '3600',
+                        'SET_TITLE'               => 'N'                        
+                    ]) ?>
                     <aside class="widget">
                         <h3 class="widget-title text-uppercase text-center">Featured Posts</h3>
 
@@ -208,7 +181,8 @@
         ],
         'NEWS_COUNT'        => 20,
         'CACHE_TYPE'        => 'A',
-        'CACHE_TIME'        => '3600'    
+        'CACHE_TIME'        => '3600',    
+        'SET_TITLE'         => 'N'
     ]) ?>
 </div>
 
@@ -242,7 +216,8 @@
                     'NEWS_COUNT'    => 3,
                     'PROPERTY_CODE' => ['NAME', 'STATUS'],
                     'CACHE_TYPE'    => 'A',
-                    'CACHE_TIME'    => '3600'    
+                    'CACHE_TIME'    => '3600',
+                    'SET_TITLE'     => 'N'
                 ]) ?>
             </div>
             <div class="col-md-4">

@@ -5,7 +5,7 @@ $APPLICATION->SetTitle(" ");
 $APPLICATION->IncludeComponent("bitrix:news", "", [
     'IBLOCK_TYPE'             => 'Content',
     'IBLOCK_ID'               => '2',
-    'SEF_MODE'             	  => 'Y',
+    'SEF_MODE'                => 'Y',
     'SEF_FOLDER'              => '/',
     'SEF_URL_TEMPLATES'       => [
         'section' => '#SECTION_CODE_PATH#/',
