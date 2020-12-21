@@ -15,6 +15,8 @@ $APPLICATION->IncludeComponent("bitrix:news", "", [
     'SORT_BY1'                => 'ID',
     'SORT_ORDER1'             => 'DESC',
     'LIST_ACTIVE_DATE_FORMAT' => 'j F Y',
+    'LIST_FIELD_CODE'         => ['SHOW_COUNTER'],
+    'DETAIL_FIELD_CODE'       => ['SHOW_COUNTER', 'TAGS'],
     'LIST_PROPERTY_CODE'      => ['AUTHOR'],
     'DETAIL_PROPERTY_CODE'    => ['AUTHOR'],
 ]);
