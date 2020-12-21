@@ -29,45 +29,22 @@
                         'CACHE_TIME'              => '3600',
                         'SET_TITLE'               => 'N'                        
                     ]) ?>
-                    <aside class="widget">
-                        <h3 class="widget-title text-uppercase text-center">Featured Posts</h3>
-
-                        <div id="widget-feature" class="owl-carousel">
-                            <div class="item">
-                                <div class="feature-content">
-                                    <img src="assets/images/p1.jpg" alt="">
-
-                                    <a href="#" class="overlay-text text-center">
-                                        <h5 class="text-uppercase">Home is peaceful</h5>
-
-                                        <p>Lorem ipsum dolor sit ametsetetur sadipscing elitr, sed </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="feature-content">
-                                    <img src="assets/images/p2.jpg" alt="">
-
-                                    <a href="#" class="overlay-text text-center">
-                                        <h5 class="text-uppercase">Home is peaceful</h5>
-
-                                        <p>Lorem ipsum dolor sit ametsetetur sadipscing elitr, sed </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="feature-content">
-                                    <img src="assets/images/p3.jpg" alt="">
-
-                                    <a href="#" class="overlay-text text-center">
-                                        <h5 class="text-uppercase">Home is peaceful</h5>
-
-                                        <p>Lorem ipsum dolor sit ametsetetur sadipscing elitr, sed </p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
+                    <?php $APPLICATION->IncludeComponent('bitrix:news.list', 'featured_posts', [
+                        'IBLOCK_TYPE'            => 'Content',
+                        'IBLOCK_ID'              => '2',
+                        'SEF_MODE'               => 'Y',
+                        'SEF_FOLDER'             => '/',
+                        'SEF_URL_TEMPLATES'      => [
+                            'section' => '#SECTION_CODE_PATH#/',
+                            'detail'  => '#SECTION_CODE_PATH#/#ELEMENT_CODE#',
+                        ],
+                        'NEWS_COUNT'              => 3,
+                        'SORT_BY1'                => 'ID',
+                        'SORT_ORDER1'             => 'ASC',
+                        'CACHE_TYPE'              => 'A',
+                        'CACHE_TIME'              => '3600',
+                        'SET_TITLE'               => 'N'                        
+                    ]) ?>
                     <?php $APPLICATION->IncludeComponent('bitrix:news.list', 'recently_posts', [
                         'IBLOCK_TYPE'            => 'Content',
                         'IBLOCK_ID'              => '2',
