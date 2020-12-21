@@ -68,70 +68,23 @@
                             </div>
                         </div>
                     </aside>
-                    <aside class="widget pos-padding">
-                        <h3 class="widget-title text-uppercase text-center">Recent Posts</h3>
-
-                        <div class="thumb-latest-posts">
-
-
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="#" class="popular-img"><img src="assets/images/r-p.jpg" alt="">
-                                        <div class="p-overlay"></div>
-                                    </a>
-                                </div>
-                                <div class="p-content">
-                                    <a href="#" class="text-uppercase">Home is peaceful Place</a>
-                                    <span class="p-date">February 15, 2016</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="thumb-latest-posts">
-
-
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="#" class="popular-img"><img src="assets/images/r-p.jpg" alt="">
-                                        <div class="p-overlay"></div>
-                                    </a>
-                                </div>
-                                <div class="p-content">
-                                    <a href="#" class="text-uppercase">Home is peaceful Place</a>
-                                    <span class="p-date">February 15, 2016</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="thumb-latest-posts">
-
-
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="#" class="popular-img"><img src="assets/images/r-p.jpg" alt="">
-                                        <div class="p-overlay"></div>
-                                    </a>
-                                </div>
-                                <div class="p-content">
-                                    <a href="#" class="text-uppercase">Home is peaceful Place</a>
-                                    <span class="p-date">February 15, 2016</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="thumb-latest-posts">
-
-
-                            <div class="media">
-                                <div class="media-left">
-                                    <a href="#" class="popular-img"><img src="assets/images/r-p.jpg" alt="">
-                                        <div class="p-overlay"></div>
-                                    </a>
-                                </div>
-                                <div class="p-content">
-                                    <a href="#" class="text-uppercase">Home is peaceful Place</a>
-                                    <span class="p-date">February 15, 2016</span>
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
+                    <?php $APPLICATION->IncludeComponent('bitrix:news.list', 'recently_posts', [
+                        'IBLOCK_TYPE'            => 'Content',
+                        'IBLOCK_ID'              => '2',
+                        'SEF_MODE'               => 'Y',
+                        'SEF_FOLDER'             => '/',
+                        'SEF_URL_TEMPLATES'      => [
+                            'section' => '#SECTION_CODE_PATH#/',
+                            'detail'  => '#SECTION_CODE_PATH#/#ELEMENT_CODE#',
+                        ],
+                        'NEWS_COUNT'              => 3,
+                        'SORT_BY1'                => 'ID',
+                        'SORT_ORDER1'             => 'DESC',
+                        'LIST_ACTIVE_DATE_FORMAT' => 'j F Y',
+                        'CACHE_TYPE'              => 'A',
+                        'CACHE_TIME'              => '3600',
+                        'SET_TITLE'               => 'N'                        
+                    ]) ?>
                     <aside class="widget border pos-padding">
                         <h3 class="widget-title text-uppercase text-center">Categories</h3>
                         <ul>
