@@ -1,6 +1,6 @@
 <?php if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <aside class="widget">
-    <h3 class="widget-title text-uppercase text-center">Popular Posts</h3>
+    <h3 class="widget-title text-uppercase text-center"><?= GetMessage('popular_posts') ?></h3>
     <?php foreach($arResult['ITEMS'] as $item): ?>
         <div class="popular-post">
             <a href="<?= $item['DETAIL_PAGE_URL'] ?>">

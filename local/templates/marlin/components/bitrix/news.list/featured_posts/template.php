@@ -1,6 +1,6 @@
 <?php if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <aside class="widget">
-    <h3 class="widget-title text-uppercase text-center">Featured Posts</h3>
+    <h3 class="widget-title text-uppercase text-center"><?= GetMessage('featured_posts') ?></h3>
     <div id="widget-feature" class="owl-carousel">
         <?php foreach($arResult['ITEMS'] as $item): ?>
             <div class="item">

@@ -1,6 +1,6 @@
 <?php if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <aside class="widget pos-padding">
-    <h3 class="widget-title text-uppercase text-center">Recent Posts</h3>
+    <h3 class="widget-title text-uppercase text-center"><?= GetMessage('recently_posts') ?></h3>
     <?php foreach($arResult['ITEMS'] as $item): ?>
         <div class="thumb-latest-posts">
             <div class="media">

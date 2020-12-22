@@ -1,6 +1,6 @@
 <?php if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <aside class="footer-widget">
-    <h3 class="widget-title text-uppercase">Testimonials</h3>
+    <h3 class="widget-title text-uppercase"><?= GetMessage('testimonials') ?></h3>
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!--Indicator-->
         <ol class="carousel-indicators">

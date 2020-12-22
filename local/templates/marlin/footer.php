@@ -12,6 +12,10 @@
                         </form>
 
                     </aside>
+                    <?php $APPLICATION->IncludeComponent('bitrix:catalog.section.list', '', [
+                        'IBLOCK_TYPE'            => 'Content',
+                        'IBLOCK_ID'              => '2',
+                    ]) ?>    
                     <?php $APPLICATION->IncludeComponent('bitrix:news.list', 'popular_posts', [
                         'IBLOCK_TYPE'            => 'Content',
                         'IBLOCK_ID'              => '2',
@@ -62,35 +66,6 @@
                         'CACHE_TIME'              => '3600',
                         'SET_TITLE'               => 'N'                        
                     ]) ?>
-                    <aside class="widget border pos-padding">
-                        <h3 class="widget-title text-uppercase text-center">Categories</h3>
-                        <ul>
-                            <li>
-                                <a href="#">Food & Drinks</a>
-                                <span class="post-count pull-right"> (2)</span>
-                            </li>
-                            <li>
-                                <a href="#">Travel</a>
-                                <span class="post-count pull-right"> (2)</span>
-                            </li>
-                            <li>
-                                <a href="#">Business</a>
-                                <span class="post-count pull-right"> (2)</span>
-                            </li>
-                            <li>
-                                <a href="#">Story</a>
-                                <span class="post-count pull-right"> (2)</span>
-                            </li>
-                            <li>
-                                <a href="#">DIY & Tips</a>
-                                <span class="post-count pull-right"> (2)</span>
-                            </li>
-                            <li>
-                                <a href="#">Lifestyle</a>
-                                <span class="post-count pull-right"> (2)</span>
-                            </li>
-                        </ul>
-                    </aside>
                 </div>
             </div>
         </div>
