@@ -12,7 +12,7 @@
     </div>
     <div class="post-content">
         <header class="entry-header text-center text-uppercase">
-            <h6><a href="#"> Travel</a></h6>
+            <h6><a href="<?= $arResult['SECTION_URL'] ?>"><?= $arResult['SECTION']['PATH'][0]['NAME'] ?></a></h6>
             <h1 class="entry-title"><a href="<?= $arResult['DETAIL_PAGE_URL'] ?>"><?= $arResult['NAME'] ?></a></h1>
         </header>
         <div class="entry-content">

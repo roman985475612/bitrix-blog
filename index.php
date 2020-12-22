@@ -11,7 +11,7 @@ $APPLICATION->IncludeComponent("bitrix:news", "", [
         'section' => '#SECTION_CODE_PATH#/',
         'detail'  => '#SECTION_CODE_PATH#/#ELEMENT_CODE#',
     ],
-    'NEWS_COUNT'              => 2,
+    'NEWS_COUNT'              => 5,
     'SORT_BY1'                => 'ID',
     'SORT_ORDER1'             => 'DESC',
     'LIST_ACTIVE_DATE_FORMAT' => 'j F Y',
