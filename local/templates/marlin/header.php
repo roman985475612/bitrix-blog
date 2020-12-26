@@ -19,6 +19,7 @@
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/owl.transitions.css');
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/style.css');
         Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/responsive.css');
+        Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . '/assets/css/custom.css');
 
         Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/jquery-1.11.3.min.js');
         Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . '/assets/js/bootstrap.min.js');

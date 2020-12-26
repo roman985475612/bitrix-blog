@@ -15,7 +15,10 @@
                     <?php $APPLICATION->IncludeComponent('bitrix:catalog.section.list', '', [
                         'IBLOCK_TYPE'            => 'Content',
                         'IBLOCK_ID'              => '2',
-                    ]) ?>    
+                    ]) ?> 
+                    <?php $APPLICATION->IncludeComponent("bitrix:search.tags.cloud", '', [
+                        'URL_SEARCH' => '/search/index.php',
+                    ]) ?>   
                     <?php $APPLICATION->IncludeComponent('bitrix:news.list', 'popular_posts', [
                         'IBLOCK_TYPE'            => 'Content',
                         'IBLOCK_ID'              => '2',
