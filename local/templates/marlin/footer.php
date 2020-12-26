@@ -12,6 +12,10 @@
                         </form>
 
                     </aside>
+                    <?php $APPLICATION->IncludeComponent("bitrix:search.form", '', [
+                        'USE_SUGGEST' => 'Y',
+                        'PAGE'		  => '#SITE_DIR#search/index.php',
+                    ]) ?>
                     <?php $APPLICATION->IncludeComponent('bitrix:catalog.section.list', '', [
                         'IBLOCK_TYPE'            => 'Content',
                         'IBLOCK_ID'              => '2',
