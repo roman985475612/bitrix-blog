@@ -61,9 +61,13 @@
                 ]) ?>
 
                 <ul class="nav navbar-nav text-uppercase pull-right">
-                    <li><a href="#">Register</a></li>
-                    <li><a href="about-me.html">Login</a></li>
-                    <li><a href="contact.html">My profile</a></li>
+                    <?php if ($USER->isAuthorized()): ?>
+                        <li><a href="#">My profile</a></li>
+                        <li><a href="/auth/logout.php">Logout</a></li>
+                    <?php else: ?>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="/auth/">Login</a></li>
+                    <?php endif ?>
                 </ul>
 
             </div>
